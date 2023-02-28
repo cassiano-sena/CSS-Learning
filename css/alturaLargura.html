@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Altura e Largura</title>
+    <style>
+        body {
+            font-size: 40px;
+            background-color: coral;
+        }
+
+        div {
+            background-color: seagreen;
+        }
+
+        span {
+            background-color: dodgerblue;
+        }
+
+        span,
+        div {
+            width: 50%;
+            height: 50%;
+            /* nao funciona, 50% do componente a qual a div pertence (body), e o body é muito pequeno pra diminuir de tamanho! Já que ele aumenta de tamanho baseado na quantidade de elementos em sequencia */
+            height: 250px;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <div>Título</div><span>Subtítulo</span>
+    <!-- pode se mover o local de onde aparece o elemento na tela, por exemplo, se colocar o span embaixo da div, no browser ele irá aparecer embaixo da div! E se colocar ao lado, ficará ao lado. -->
+</body>
+
+</html>
